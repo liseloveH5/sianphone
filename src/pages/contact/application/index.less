@@ -1,0 +1,41 @@
+@import "~@/assets/style/base/_fn";
+
+.science-application{
+
+  .common-contain{
+    padding-top:@gap;
+  }
+
+  .label-require::after{
+    content:'*';
+    color:@red;
+    position: absolute;
+    margin-left:2px;
+  }
+
+  .form-row{
+    margin-bottom:@gapH;
+
+    >div:first-child{
+      text-align: right;
+      padding-right:20px;
+      label{
+        margin:.35rem 0;
+      }
+    }
+
+  }
+
+  .form-button-row{
+    margin-top:40px;
+
+  }
+
+  .common-contain{
+    background:@colorBg;
+  }
+
+  .message-form{
+    margin:50px 0;
+  }
+}

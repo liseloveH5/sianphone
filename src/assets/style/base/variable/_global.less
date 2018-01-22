@@ -1,0 +1,139 @@
+@charset "UTF-8";
+//-----------------------------------------------------
+// variables scss
+//-----------------------------------------------------
+
+
+// font相关
+//-----------------------------------------------------
+@fontSize:                       14px;
+@fontLineHeight:                 1.5;
+@fontFamily:                     "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+// ios华文黑体,Android 4.0之后,Android 4.0之前
+@weuiFontCN: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+// ios4.0+,ios4.0-,Android 4.0+,Android 4.0-
+@weuiFontEN:-apple-system-font,"Helvetica Neue";
+//@weuiFontDefault:-apple-system-font,"Helvetica Neue",sans-serif;
+@weuiFontDefault:'Avenir', Helvetica, Arial, sans-serif;
+@weuiFontSans:sans-serif;
+
+
+
+
+
+
+// 背景色，文本色，边框色，链接色
+//-----------------------------------------------------
+@colorText:                      #333;
+//@colorBorder:                    rgb(221,221,221);
+@colorBorder:                    #ddd;
+@colorLink:                      #08c;
+@colorPlaceholder:               #999; // input placeholder color
+@colorOverlay:                   rgba(0,0,0,.7); // 遮罩层颜色
+@colorBg: rgb(244,244,244);
+
+
+// 基本颜色
+// color function : http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html
+// lighten(@color, @amount)
+// darken(@color, @amount)
+// opacity(@color, @amount)
+// mix(@color1, @color2[, @amount])
+//-----------------------------------------------------
+@color2:                          #222;
+@color3:                          #333;
+@color6:                          #666;
+@color9:                          #999;
+@colorC:                          #ccc;
+@colorE:                          #e1e1e1;
+@colorF:                          rgb(246,246,250);
+
+
+@blue:                            #00aae8;
+@orange:                          #ff6600;
+@red:                             #FF4949;
+@green:                           #4cd964;
+@primary:                         @blue;
+@danger:                          @red;
+@info:                            @orange;
+@secondary:                       rgb(46,182,170);;
+
+@primaryActive:                   lighten(@primary,10%);
+@infoActive:                      lighten(@info,10%);
+
+//20170517添加by justin
+@gray-dark:                 #222;   // 用于重要性文字，标题性文字。
+@gray:                      #666;   // 用于重要性文字，标题性文字。
+@gray-light:                #999;   // 用于次要文字，表单内默认提示文字
+@gray-lighter:              #ddd;
+@gray-lightest:             #eee;
+
+@black:                     #1F2D3D;
+@black-light:               #324057;
+@black-lighter:             #475669;
+// weui color
+//-----------------------------------------------------
+// link
+@weuiLinkColorDefault: #586C94;
+
+// background
+@weuiBgColorDefault: #EFEFF4;
+@weuiBgColorActive: #ECECEC;
+
+// line
+@weuiLineColorLight: #E5E5E5;
+@weuiLineColorDark: #BCBAB6;
+
+// text
+@weuiTextColorTitle: #000000;
+@weuiTextColorTips: #B2B2B2;
+@weuiTextColorWarn: #E64340;
+@weuiTextColorGray: #999999;
+
+
+
+// radius
+@buttonRadius: 20px;
+
+
+
+
+
+// 元素上下间距  vertical  垂直
+//-----------------------------------------------------
+@gap:                             20px;
+@gapSmall:                        10px;
+
+//  元素左右间距   horizontal  水平
+@gapH:                            15px;
+@gapHSmall:                       10px;
+
+
+//-----------------------------------------------------
+@barHeight:                       40px;
+@inputHeight:                     90px;
+
+
+// radius
+//-----------------------------------------------------
+@radiusBase:                      5px;
+@radiusSmall:                     3px;
+
+
+// timing-function
+//-----------------------------------------------------
+@timingFunction:                  cubic-bezier(0.42, 0, 0.58, 1);
+
+
+// active state switch
+//-----------------------------------------------------
+@activeStateSwitch:               true;
+
+
+// z-index
+//-----------------------------------------------------
+@zIndexHeader:                    1000;
+@zIndexFooter:                    2000;
+@zIndexPopup:					  3000;
+@zIndexOverlay:                   4000; // 默认高于header和footer部分
+
