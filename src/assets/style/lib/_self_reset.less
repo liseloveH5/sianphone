@@ -17,6 +17,7 @@ html,body{
   color:@color6;
   //font-family: @weuiFontCN;
   background:@colorBg;
+  margin:0;
 }
 
 #app,.page{
@@ -36,28 +37,8 @@ html,body{
     flex:1;
   }
 }
-
-// 覆盖全局bootstrap样式
-.btn{
-  min-width:120px;
-  text-align: center;
-  border-radius: @buttonRadius;
-  &:hover{
-    cursor: pointer;
-  }
-}
-
-.btn-primary{
-  background-color:@primary;
-  border-color:@primary;
-}
-.container{
-  padding:20px 0;
-}
-@media (min-width: 1200px){
-  .container{
-    max-width:1000px;
-  }
+.mint-navbar .mint-tab-item{
+  z-index:5;
 }
 
 

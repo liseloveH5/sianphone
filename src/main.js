@@ -13,7 +13,7 @@ Vue.use(Mint);
 // 引用第三方ajax插件
 import axios from 'axios'
 Vue.prototype.$http = axios
-axios.defaults.baseURL = 'http://47.96.153.197';
+axios.defaults.baseURL = 'http://api.sianmed.com/web';
 
 
 // axios 全局拦截器

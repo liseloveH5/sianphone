@@ -3,15 +3,7 @@ const index = {
 
   data() {
     return {
-      form: {
-        email: '',
-        name: '',
-        message:'',
-        phone:'',
-        tel:'',
-      },
-
-      show: true,
+      selected: '1'
     }
   },
 
@@ -20,6 +12,7 @@ const index = {
   mounted: function () {
     this.$nextTick(function () {
       // 保证 this.$el 已经插入文档
+      this.initData()
     })
   },
 
@@ -29,9 +22,14 @@ const index = {
    },*/
 
   methods: {
-    onSubmit (evt) {
-      evt.preventDefault();
-      alert(JSON.stringify(this.form));
+    initData () {
+      // http://api.sianmed.com/web/System/nav
+
+      this.$http.post('/System/nav').then(function (response) {
+      })
+        .catch(function (error) {
+          console.log(error);
+        });
     }
 
   }
