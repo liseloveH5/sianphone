@@ -19,7 +19,7 @@ export default new Router({
       path: '/news/detail',
       component: () => import(/* webpackChunkName: "contact" */ '@/pages/news/detail/index.vue')
     },
-    // 联系我们
+    //申请表单
     {
       path: '/contact/application',
       component: () => import(/* webpackChunkName: "contact" */ '@/pages/contact/application/index.vue')
